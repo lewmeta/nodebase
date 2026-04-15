@@ -24,6 +24,7 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form";
+import Image from "next/image";
 
 const loginSchema = z.object({
     email: z.email('Please enter a valid email address'),
@@ -67,12 +68,12 @@ export const LoginForm = () => {
                                         // onClick={signInGithub}
                                         disabled={isPending}
                                     >
-                                        {/* <Image
+                                        <Image
                                             src="/logos/github.svg"
                                             alt="GitHub"
                                             width={20}
                                             height={20}
-                                        /> */}
+                                        />
                                         Continue with Github
                                     </Button>
                                     <Button
@@ -82,12 +83,12 @@ export const LoginForm = () => {
                                         // onClick={signInGoogle}
                                         disabled={isPending}
                                     >
-                                        {/* <Image
+                                        <Image
                                             src="/logos/google.svg"
                                             alt="Google"
                                             width={20}
                                             height={20}
-                                        /> */}
+                                        />
                                         Continue with Google
                                     </Button>
                                 </div>
